@@ -30,7 +30,9 @@ public class JavaFileAdaterWriter extends AbsWriter {
 			writer.write("package  " + jInfo.pkgName + "; \n");
 			writer.write("\n\n");
 			writer.write("import " + jInfo.pkgName + "." + jInfo.clzName + ";");
+			writer.write("\n");
 			writer.write("import com.event.inject.adapter.InjectAdapter;");
+			writer.write("\n\n");
 
 			writer.write("public class " + jInfo.newClzName + " implements InjectAdapter<"+jInfo.clzName+">{");
 			writer.write("\n\n");
